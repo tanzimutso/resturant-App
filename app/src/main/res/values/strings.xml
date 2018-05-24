@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My RestaurantAPP</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_notification">Notification</string>
+    <string name="nav_favourites">Favourites</string>
+    <string name="nav_hot">Trending</string>
+</resources>
