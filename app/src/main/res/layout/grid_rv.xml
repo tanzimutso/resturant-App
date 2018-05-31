@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:background="#e6d7ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivMImage"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tvCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivMImage"
+            android:layout_margin="10dp"
+            android:text="default text"
+            android:textSize="21sp" />
+
+
+        <Button
+            android:id="@+id/exploreBut"
+            android:background="#456de6"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCaption"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="explore" />
+
+        <Button
+            android:id="@+id/addBut"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/exploreBut"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/plus"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/exploreBut"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:text="@string/food_desc"
+            android:visibility="invisible"
+            android:id="@+id/food_desc"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
